@@ -10,6 +10,10 @@ import webbrowser
 import pyaudio
 import os
 
+
+'''
+Code by Vegeta2007k/Yogi
+'''
 # we create a variable 'listener' which will be our sr.Recognizer
 listener = sr.Recognizer()
 engine = pyttsx3.init()
@@ -25,7 +29,7 @@ def talk(text):
 def take_command():
     try:
         with sr.Microphone() as source:
-            print('listening...')
+            print('listening...Created by @Yogi')
             voice = listener.listen(source)
             command = listener.recognize_google(voice)
             command = command.lower()
@@ -37,7 +41,7 @@ def take_command():
 # Defining the commands and their output
 def run_jarvis():
     command = take_command()
-    print("Recognizing...")
+    print("Recognizing...Created by @Yogi")
     print(command)
 # A command to play music on YouTube
     if 'play' in command:
