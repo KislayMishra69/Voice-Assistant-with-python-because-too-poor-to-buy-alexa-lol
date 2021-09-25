@@ -1,5 +1,3 @@
-#I'll be naming it Jarvis...because it sounds cool. You can name it anything you want :D
-
 # All the modules we'll be needing for this are as follows:-
 import speech_recognition as sr
 import pyttsx3
@@ -49,7 +47,7 @@ def run_jarvis():
         talk('playing ' + song)
         pywhatkit.playonyt(song)
 
-# A command to tell time
+# A command to tell the time
     elif 'time' in command:
         time = datetime.datetime.now().strftime('%I:%M %p')
         talk('Current time is ' + time)
@@ -75,7 +73,9 @@ def run_jarvis():
     elif 'reddit' in command:
         webbrowser.open("https://www.reddit.com/")
         talk("Opening Reddit...")
-
+'''
+Like this, you can add up any command to open any website...
+'''
 
 while True:
     run_jarvis()
